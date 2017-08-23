@@ -42,7 +42,7 @@
            </div>
         </header>
         <main class="main-page">
-            <dialog>    
+            <dialog class="popup">    
                 <form class="contact_form" method="post">
                     <p>
                         <input type="text" name="name" placeholder="Ваше имя" required>
@@ -206,10 +206,10 @@
                 </section>     
             </div>
             <div class="container">
+              <form class="contact_form" method="post">
                 <div class="left">
                     <p>Заполните форму для оформления заказа:</p>
-                    <form class="contact_form" method="post">
-                        <p>
+                    <p>
                             <input type="text" name="name" placeholder="Ваше имя*" required>
                         </p>
                         <p>
@@ -221,7 +221,7 @@
                         <p>
                             <input type="text" name="address" placeholder="Адрес доставки*" required />
                         </p>
-                    </form>
+                    
                     <p>Выберете транспортную компанию:</p>
                     <select name = "list">
 			            <option value = "1" selected>Компания 1</option>
@@ -232,23 +232,26 @@
                         <option value = "6">Самовывоз</option>
 		            </select>
                 </div>
-                <div class="right">
-                    <p>
-                        <span>Сумма:</span><strong>27 489</strong>
-                        <span>Сумма указана без учёта скидки</span>
-                        <span>Скидка:</span><strong>20 %</strong>
-                        <span>Скидка от общей стоимости товара</span>
-                        <span>
-                            Вес нетто:<strong>0 кг</strong>
-                            Вес брутто:<strong>0 кг</strong>
-                            Объём:<strong>0 куб/м</strong>
-                        </span>
-                    </p></br>
-                    <p><strong>Итого: 27 989</strong></p>
-                    <p>
+                <div class="total-order">
+                    <div class="total-summ">
+                        <span>Сумма:</span><span>27 489 ₽</span>
+                        <p>Сумма указана без учёта скидки</p>
+                    </div>
+                    <div class="discount">
+                        <span>Скидка:</span><span>20 %</span>>
+                        <p>Скидка от общей стоимости товара</p>
+                    </div>
+                    <div>
+                        <span>Вес нетто:</span><span>0 кг</span>
+                        <span>Вес брутто:</span><span>0 кг</span>
+                        <span>Объём:</span><span>0 куб/м</span>
+                     </div>
+                    <div class="btn">
+                        <span>Итого:</span><span>27 989 ₽</span>
                         <button class="button" type="submit">Оформить заказ</button>
-                    </p>
+                    </div>  
                 </div>
+              </form>  
             </div>
             <div class="container">
                 </div class="title">    
